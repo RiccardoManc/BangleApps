@@ -266,7 +266,7 @@ function monitorGesture(gesture){
         clearGesture();
         var average = rssi_values.reduce((a, b) => a + b) / rssi_values.length;
         console.log(`The average is: ${average}.`);
-        if(average<-74){
+        if(average<-70){
           dpiNotInRange();
         }else {
           dpiInRange();
